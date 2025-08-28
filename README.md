@@ -37,7 +37,7 @@ Dự án này tập trung phân tích **tác động của các nhân tố đế
 - Phân tích tác động kết hợp của nhiều biến độc lập đến biến phụ thuộc
 
 ### 5. Đánh giá kết quả
-- Trình bày, đánh giá các insight quan trọng
+- Nhóm nhân tố Hồ sơ tín dụng (tỷ lệ sử dụng tín dụng quay vòng, tỷ lệ nợ trên thu nhập) là các nhân tố tác động lớn nhất đến khả năng phát sinh nợ xấu
+- Nhóm nhân tố Nhân khẩu học và Hành vi trả chậm là các nhân tố bổ trợ giúp phân loại khách hàng theo mức độ rủi ro
 
-**Đang cập nhật…** sẽ bổ sung trước ngày 1/9/2025
 
