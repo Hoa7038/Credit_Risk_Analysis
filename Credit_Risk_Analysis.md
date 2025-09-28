@@ -18,22 +18,24 @@ Dự án này tập trung phân tích dữ liệu của khách hàng nhằm xác
 | 11 | `dlq_2yrs` | Biến mục tiêu/phụ thuộc cho biết khách hàng có phát sinh nợ xấu nghiêm trọng trong 2 năm tới hay không (0 = Không; 1 = Có) |
 
 ## 3. Công cụ sử dụng 
-- **Python**: thống kê, phân tích, visualization
-- **SQL**: xử lý dữ liệu
-- **Power BI**: phân tích, visualization
+- **SQL**: Xử lý dữ liệu
+- **Python**: Thống kê, phân tích 
+- **Power BI**: Trực quan hóa
 
 ## 4. Quá trình thực hiện
 ### 4.1. Thu thập và xử lý dữ liệu
 - Thu thập dữ liệu từ Kaggle  
-- Làm sạch dữ liệu, xử lý missing values, outlier
+- Làm sạch dữ liệu, xử lý missing values và outliers
 
 ### 4.2. Khám phá dữ liệu (EDA)
 - Thống kê mô tả các biến  
-- Visualize phân phối dữ liệu, kiểm tra các mối quan hệ cơ bản giữa các biến
+- Kiểm tra xu hướng tác động của các nhóm biến độc lập (Nhân khẩu học, Hồ sơ tín dụng, Hành vi trả nợ) và của từng biến độc lập đến biến mục tiêu (tác động cùng chiều hay ngược chiều, mối quan hệ chặt chẽ/lỏng lẻo)
+- Kiểm tra hiện tượng **đa cộng tuyến (multicollinearity)** để đảm bảo các biến độc lập không quá phụ thuộc lẫn nhau trước khi đưa vào phân tích hoặc mô hình hồi quy
 
 ### 4.3. Kiểm tra mức độ tác động
-- 10 biến độc lập thuộc 03 nhóm (Nhân khẩu học, Hồ sơ tín dụng, Hành vi trả nợ) đến biến mục tiêu (khả năng phát sinh nợ xấu)
-- Kiểm tra tỷ lệ nợ xấu theo từng nhóm của từng biến độc lập
+Sử dụng **hồi quy logistic** để đánh giá:
+- Tác động của 10 biến độc lập thuộc 03 nhóm (Nhân khẩu học, Hồ sơ tín dụng, Hành vi trả nợ) đến biến khả năng phát sinh nợ xấu của khách hàng
+- Tỷ lệ nợ xấu theo từng nhóm của từng biến độc lập
 
 ### 5. Đánh giá kết quả
 Phân tích 03 nhóm nhân tố chính (Nhân khẩu học, Hồ sơ tín dụng, Hành vi trả nợ) cho thấy bức tranh rủi ro tín dụng của tệp khách hàng. Kết quả phân tích cho thấy nhóm Nhân khẩu học và Hồ sơ tín dụng cung cấp thông tin nền, trong khi Hành vi trả nợ phản ánh trực tiếp và mạnh mẽ nhất đến khả năng phát sinh nợ xấu, cụ thể:
@@ -43,7 +45,7 @@ Phân tích 03 nhóm nhân tố chính (Nhân khẩu học, Hồ sơ tín dụng
 
 **Kết luận chung**: Khi kết hợp 03 nhóm nhân tổ trên cho thấy Khách hàng trẻ, thu nhập thấp, nhiều người phụ thuộc, hồ sơ tín dụng hạn chế, sử dụng tín dụng vượt quá khả năng, và đặc biệt có lịch sử trễ hạn là những đối tượng có rủi ro nợ xấu cao nhất. Ngược lại, Khách hàng có thu nhập cao, lịch sử tín dụng ổn định, tỷ lệ nợ hợp lý và chưa từng trễ hạn thường an toàn hơn nhiều.
 
-**Định hướng ứng dụng**: Các kết quả phân tích này có thể làm cơ sở lựa chọn biến cho mô hình chấm điểm tín dụng, đồng thời giúp ngân hàng thiết kế chính sách quản lý rủi ro phù hợp với từng nhóm khách hàng.
+**Định hướng ứng dụng**: Các kết quả phân tích này có thể làm cơ sở **lựa chọn biến cho mô hình chấm điểm tín dụng**, đồng thời giúp ngân hàng **thiết kế chính sách quản lý rủi ro** cho từng nhóm khách hàng.
 
 
 
