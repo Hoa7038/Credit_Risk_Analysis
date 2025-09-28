@@ -41,9 +41,7 @@ Phân tích 03 nhóm nhân tố chính (Nhân khẩu học, Hồ sơ tín dụng
 - **Nhóm Hồ sơ tín dụng**: Rủi ro cao nhất tập trung ở khách hàng có rất ít tài khoản tín dụng mở (do thiếu lịch sử tín dụng), sử dụng hạn mức quá cao (>80%, rủi ro >75%), và có tỷ lệ nợ/thu nhập vượt 80%. Nhóm khách hàng có hồ sơ tín dụng đa dạng hơn, sử dụng hạn mức hợp lý (0–30%) và duy trì tỷ lệ nợ thấp (<50%) thường có khả năng trả nợ tốt hơn.
 - **Nhóm Hành vi trả nợ**: Đây là nhân tố quan trọng nhất. Chỉ cần một lần trễ hạn đã làm tỷ lệ nợ xấu tăng vọt: ~70% cho trễ hạn 30–59 ngày, ~86% cho trễ hạn 60–89 ngày, và ~87% cho trễ hạn trên 90 ngày. Khi số lần trễ hạn tăng từ 2 lần trở lên, khả năng nợ xấu gần như chắc chắn (94–98%).
 
-**Kết luận chung**: Khi kết hợp 03 nhóm nhân tổ trên cho thấy 
-(i) Khách hàng trẻ, thu nhập thấp, nhiều người phụ thuộc, hồ sơ tín dụng hạn chế, sử dụng tín dụng vượt quá khả năng, và đặc biệt có lịch sử trễ hạn là những đối tượng có rủi ro nợ xấu cao nhất. 
-(ii) Ngược lại, Khách hàng có thu nhập cao, lịch sử tín dụng ổn định, tỷ lệ nợ hợp lý và chưa từng trễ hạn thường an toàn hơn nhiều.
+**Kết luận chung**: Khi kết hợp 03 nhóm nhân tổ trên cho thấy Khách hàng trẻ, thu nhập thấp, nhiều người phụ thuộc, hồ sơ tín dụng hạn chế, sử dụng tín dụng vượt quá khả năng, và đặc biệt có lịch sử trễ hạn là những đối tượng có rủi ro nợ xấu cao nhất. Ngược lại, Khách hàng có thu nhập cao, lịch sử tín dụng ổn định, tỷ lệ nợ hợp lý và chưa từng trễ hạn thường an toàn hơn nhiều.
 
 **Định hướng ứng dụng**: Các kết quả phân tích này có thể làm cơ sở lựa chọn biến cho mô hình chấm điểm tín dụng, đồng thời giúp ngân hàng thiết kế chính sách quản lý rủi ro phù hợp với từng nhóm khách hàng.
 
