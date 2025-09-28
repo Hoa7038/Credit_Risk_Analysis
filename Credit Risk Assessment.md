@@ -1,4 +1,4 @@
-# Credit_Risk_Analysis
+# Credit Risk Assessment
 ## 1. Mục tiêu
 Dự án này tập trung phân tích dữ liệu của khách hàng nhằm xác định **nhóm nhân tố ảnh hưởng đến khả năng phát sinh nợ xấu nghiêm trọng trong vòng 2 năm của khách hàng**.
 
